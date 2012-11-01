@@ -8,6 +8,7 @@ else
 endif
 syntax on
 
+set cursorline
 set textwidth=80
 set number
 set nowrap " forces style

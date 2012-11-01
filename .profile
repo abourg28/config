@@ -10,6 +10,7 @@ alias src="source ~/.profile"
 alias vi="vim"
 export CGI="~/public_html/cgi-bin"
 export WIGGLEDIR="$HOME/cs520/git/cs520/group-d/wig/src"
+export PATH="$HOME"/Dropbox/SableCC3/bin:$HOME/ant/bin:$PATH
 
 PS1='\[\e[m\][\[\e[1;32m\]\w\[\e[m\]]> '
 
