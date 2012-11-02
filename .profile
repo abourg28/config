@@ -1,5 +1,5 @@
 export PATH=$PATH:/home/2009/abourg28/bin
-alias cws='cd $HOME/cs520/git/cs520/group-d/wig/src'
+alias cws='cd $HOME/git/cs520/group-d/wig/src'
 alias dp='cd $HOME/git/design-project'
 alias ls="ls --color=auto"
 alias lsa="ls -a"
@@ -10,7 +10,7 @@ alias home="cd $HOME"
 alias src="source $HOME/.profile"
 alias vi="vim"
 export CGI="~/public_html/cgi-bin"
-export WIGGLEDIR="$HOME/cs520/git/cs520/group-d/wig/src"
+export WIGGLEDIR="$HOME/git/cs520/group-d/wig/src"
 export PATH="$HOME"/Dropbox/SableCC3/bin:$HOME/ant/bin:$PATH
 
 PS1='\[\e[m\][\[\e[1;32m\]\w\[\e[m\]]\n\$'
