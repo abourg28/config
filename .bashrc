@@ -1,6 +1,7 @@
 export PATH=$PATH:/home/2009/abourg28/bin
 alias cws='cd $HOME/git/cs520/group-d/wig/src'
 alias dp='cd $HOME/git/design-project'
+alias ass='cd $HOME/Dropbox/Assignments'
 alias ls="ls --color=auto"
 alias lsa="ls -a"
 alias lsl="ls -l"
@@ -9,6 +10,8 @@ alias cgi="cd $HOME/public_html/cgi-bin"
 alias home="cd $HOME"
 alias src="source $HOME/.profile"
 alias vi="vim"
+alias open="xdg-open"
+alias chrome="google-chrome"
 export CGI="~/public_html/cgi-bin"
 export WIGGLEDIR="$HOME/git/cs520/group-d/wig/src"
 export PATH="$HOME"/Dropbox/SableCC3/bin:$HOME/ant/bin:$PATH
@@ -25,3 +28,17 @@ export WIGDIR=$HOME/cs520/public_html/wig
 export CLASSPATH=.:$JOOSDIR/jooslib.jar:$CLASSPATH
 # Add the JAVADIR, WIGDIR and JOOSDIR binaries to the path
 export PATH=$JAVADIR/bin:$HOME/cs520/git/cs520/group-d/joos/scanparse:$JOOSDIR/bin:$WIGDIR/bin:$PATH:$WIGGLEDIR
+
+# Repeat command: repeat <number> <command>
+repeat() {
+    n=$1
+    shift
+    while [ $(( n -= 1 )) -ge 0 ]
+    do
+        echo ""
+        echo "Run #$n -------------------"
+        echo ""
+        sleep 1
+        "$@"
+    done
+}

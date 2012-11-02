@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME
-rm $HOME/.profile.backup
-mv $HOME/.profile $HOME/backup/.profile.backup
-ln -s $HOME/git/config/.profile .profile
+rm $HOME/.bashrc.backup
+mv $HOME/.bashrc $HOME/backup/.bashrc.backup
+ln -s $HOME/git/config/.bashrc .bashrc
 ln -s $HOME/git/config/.vimrc .vimrc
