@@ -22,6 +22,7 @@ set smarttab " makes you go back 2 when you del from tab
 set hlsearch " highlight all matches in a file when searching
 set incsearch " incrementally highlight your searches
 set pastetoggle=<F8>
+inoremap <leader>p <F8><cr> p<cr> <F8><cr>
 set nobackup " remove backups from vim
 set noswapfile " remove backups from vim
 set smartcase " use caps if any caps used in search
@@ -31,6 +32,7 @@ set encoding=utf-8 " order matters for Windows (encoding+autochdir)
 set title " modifies window to have filename as its title
 set shell=/bin/bash
 set viminfo='10,\"100,:20,%,n~/.viminfo " saves position in files
+let mapleader=","
 
 if v:version >= 600
   filetype plugin on
@@ -46,6 +48,10 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <leader>w :set hlsearch!<CR>
 nnoremap <leader>dw :%s/\v +\n/\r/g<CR> " when substituting, \r is newline
+nnoremap ,, <C-^>
+
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>F :CommandTFlush<cr>\|:CommandT $HOME<cr>
 
 nnoremap <Right> <C-w>l
 nnoremap <Left> <C-w>h
@@ -86,3 +92,5 @@ set statusline+=\ Buf\=%n " Buffer number
 set statusline+=\ %y " Filetype
 set statusline+=\ char=\[%b\]
 set statusline+=\ %=%l/%L\ (%p%%)\ \  " right align percentages
+call pathogen#infect()
+call pathogen#helptags()

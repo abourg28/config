@@ -22,8 +22,8 @@ PS1='\[\e[m\][\[\e[1;32m\]\w\[\e[m\]]\n\$'
 export JAVADIR=/usr/lib/jvm/java-7-openjdk-i386/jre
 
 # This variable tells scripts where to find the JOOS/WIG binaries and libraries.
-export JOOSDIR=$HOME/git/cs520/public_html/joos
-export WIGDIR=$HOME/git/cs520/public_html/wig
+export JOOSDIR=$HOME/git/public_html/joos
+export WIGDIR=$HOME/git/public_html/wig
 # We would like to add the current directory . to our CLASSPATH as well the jar file containing the JOOS libraries, jooslib.jar.
 export CLASSPATH=.:$JOOSDIR/jooslib.jar:$CLASSPATH
 # Add the JAVADIR, WIGDIR and JOOSDIR binaries to the path
@@ -42,3 +42,5 @@ repeat() {
         "$@"
     done
 }
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
