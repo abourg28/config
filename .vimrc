@@ -85,6 +85,11 @@ augroup filetype_makefile
   autocmd Filetype make setlocal noexpandtab
 augroup END
 
+augroup filetype_wig
+ autocmd!
+ autocmd FileType wig nnoremap <leader>r :!wiggle % --symbol <CR>
+augroup END
+
 set statusline=%.40F " write full path to file, max of 40 chars
 set statusline+=%h%m%r " help file, modified, and read only
 set statusline+=\ col=%v " column number

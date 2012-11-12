@@ -1,4 +1,3 @@
 [submodule "bundle/command-t"]
-  path = .vim/bundle/command-t
-  url = git://git.wincent.com/command-t.git
-  ignore = dirty
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
